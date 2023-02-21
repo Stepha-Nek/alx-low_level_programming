@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * times_table - prints the nines times table
- *
+ * times_table - prints the nines times table*
  *
  * Return: Always 0 if successful
  */
@@ -46,4 +45,4 @@ void times_table(void)
 		}
 		_putchar ('\n');
 	}
-}	
+}
