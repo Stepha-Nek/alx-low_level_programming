@@ -7,41 +7,18 @@
 int main(void)
 {
 	int i;
-	int f;
-	int b;
-	int fb;
 
-	for (i = 1; i <= 100; i++)
+	for (i = 1; i < 100; i++)
 	{
-		f = i % 3;
-		b = i % 5;
-		fb = i % 15;
-
-		if (fb == 0)
-		{
-			printf("FizzBuzz");
-			printf(" ");
-			printf("\n");
-		}
-		else if (b == 0)
-		{
-			printf("Buzz");
-			printf(" ");
-			printf("\n");
-		}
-		else if (f == 0)
-		{
-			printf("Fizz");
-			printf(" ");
-			printf("\n");
-		}
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz ");
+		else if (i % 3 == 0)
+			printf("Fizz ");
+		else if (i % 5 == 0)
+			printf("Buzz ");
 		else
-		{
-			printf("%i", i);
-			printf(" ");
-			printf("\n");
-		}
+			printf("%d ", i);
 	}
+	printf("Buzz\n");
 	return (0);
-
 }
